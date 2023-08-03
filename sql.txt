@@ -1,0 +1,12 @@
+create table board (
+	bno number(6),
+	title varchar2(30 char),
+	content clob,
+	nickname varchar2(10 char),
+	password varchar2(60 char),
+	writeday date,
+	readcnt number(3),
+	constraint board_pk_bno primary key(bno)
+);
+
+create sequence board_seq;
